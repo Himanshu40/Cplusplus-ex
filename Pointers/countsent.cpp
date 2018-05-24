@@ -8,11 +8,10 @@ int main()
   std::cout << "Enter a sentence:-" << '\n';
   std::cin.getline(sent, 30);
   std::cout << "---To count space in between words in a sentnce---" << '\n';
-  for(int i=1;i<=30;i++)
+  for(p;*p!='\0';p++)
   {
     if(*p==' ')
       count++;
-    p++;
   }
   std::cout << "Total numer of space:-" << '\n' << count << '\n';
   return 0;

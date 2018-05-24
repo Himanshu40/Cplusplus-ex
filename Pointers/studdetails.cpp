@@ -16,10 +16,8 @@ int main()
   {
     std::cout << "---Student "<< count << "---" << '\n';
     std::cout << "Name:- ";
-    //fgets(S[i].name, 20, stdin);
     std::cin >> p->name;
     std::cout << "Address:- ";
-    //fgets(S[i].add, 20, stdin);
     std::cin >> p->add;
     std::cout << "Roll no:- ";
     std::cin >> p->rollno;

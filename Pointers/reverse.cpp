@@ -2,7 +2,7 @@
 int main()
 {
   int num[10], i, *p;
-  p=&num[10];
+  p=&num[9];
   std::cout << "Enter the numbers upto 10:-" << '\n';
   for(i=0;i<10;i++)
     std::cin >> num[i];
