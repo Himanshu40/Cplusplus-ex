@@ -10,6 +10,7 @@ class student
   public:
       student(int , char *, char *);
       void display();
+      ~student();
 };
 int main()
 {
@@ -28,6 +29,11 @@ student::student(int x, char *y, char *z)
   len=strlen(z);
   addr=new char[len+1];
   strcpy(addr, z);
+}
+student::~student()
+{
+  delete name;
+  delete addr;
 }
 void student::display()
 {
