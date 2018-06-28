@@ -23,11 +23,9 @@ int main()
 student::student(int x, char *y, char *z)
 {
   rollno=x;
-  int len=strlen(y);
-  name=new char[len+1];
+  name=new char[strlen(y)+1];
   strcpy(name, y);
-  len=strlen(z);
-  addr=new char[len+1];
+  addr=new char[strlen(y)+1];
   strcpy(addr, z);
 }
 student::~student()
