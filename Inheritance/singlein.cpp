@@ -7,9 +7,10 @@ class student
     char name[20];
   protected:
     char addr[10];
+    void get();
   public:
-    void geti();
-    void printi();
+    void getdata();
+    void printdata();
 };
 
 class mark:public student
@@ -29,35 +30,38 @@ int main()
 
 void mark::getdata()
 {
-  geti();
+  student::getdata();
   std::cout<<"Enter marks of PHY, CHEM, MATH:- "<<'\n';
   std::cin>>phy>>chem>>math;
 }
 
 void mark::printdata()
 {
-  printi();
+  student::printdata();
   std::cout<<"Marks of PHY:- "<<phy<<'\n';
   std::cout<<"Marks of CHEM:- "<<chem<<'\n';
   std::cout<<"Marks of MATH:- "<<math<<'\n';
 }
 
-void student::geti()
+void student::getdata()
 {
   std::cout<<"Enter name:- "<<'\n';
-  std::cin.ignore();
   std::cin.getline(name, 20);
-  fgets(name, 20, stdin);
   std::cout<<"Enter roll number:- "<<'\n';
   std::cin>>rollno;
   std::cout<<"Enter address:- "<<'\n';
-  std::cin.ignore();
-  std::cin.getline(addr, 10);
+  get();
 }
 
-void student::printi()
+void student::printdata()
 {
   std::cout<<"NAME:- "<<name<<'\n';
   std::cout<<"ROLL NUMBER:- "<<rollno<<'\n';
   std::cout<<"ADDRS.:- "<<addr<<'\n';
+}
+
+void student::get()
+{
+  std::cin.ignore();
+  std::cin.getline(addr, 10);
 }
