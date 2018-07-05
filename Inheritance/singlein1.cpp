@@ -1,4 +1,4 @@
-//Access from derived class to base class through function
+//Access to base class through derived class object
 
 #include<iostream>
 #include<stdio.h>
@@ -26,20 +26,20 @@ class mark:public student
 int main()
 {
   mark M1;
+  M1.student::getdata();
   M1.getdata();
+  M1.student::printdata();
   M1.printdata();
 }
 
 void mark::getdata()
 {
-  student::getdata();
   std::cout<<"Enter marks of PHY, CHEM, MATH:- "<<'\n';
   std::cin>>phy>>chem>>math;
 }
 
 void mark::printdata()
 {
-  student::printdata();
   std::cout<<"Marks of PHY:- "<<phy<<'\n';
   std::cout<<"Marks of CHEM:- "<<chem<<'\n';
   std::cout<<"Marks of MATH:- "<<math<<'\n';
