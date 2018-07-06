@@ -30,6 +30,7 @@ int main()
   M1.getdata();
   M1.student::printdata();
   M1.printdata();
+  return 0;
 }
 
 void mark::getdata()

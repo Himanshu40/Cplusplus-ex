@@ -33,6 +33,7 @@ int main()
   b.get();
   b.printdata();
   std::cout<<"\nf = "<<b.f<<"\n";
+  return 0;
 }
 
 void B::get()

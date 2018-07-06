@@ -28,6 +28,7 @@ int main()
   mark M1;
   M1.getdata();
   M1.printdata();
+  return 0;
 }
 
 void mark::getdata()
