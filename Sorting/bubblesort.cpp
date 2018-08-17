@@ -3,7 +3,7 @@
 void bubble_sort(int x[10], int s)
 {
   int temp, i, j;
-  for(i=0;i<s;i++)
+  for(i=0;i<(s-1);i++)
     for(j=0;j<(s-i);j++)
       if(x[j] > x[j+1])
       {

@@ -3,7 +3,7 @@
 void selection_sort(int x[], int size)
 {
   int temp, i, j;
-  for(i=0;i<size;i++)
+  for(i=0;i<(size-1);i++)
     for(j=i+1;j<size-i;j++)
       if(x[i]>x[j])
       {
