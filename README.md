@@ -1,3 +1,3 @@
 # Cplusplus-ex
 
-### All the programs are written under Ubuntu GNOME 16.04
+### C++ programs written for study and example of some topics
